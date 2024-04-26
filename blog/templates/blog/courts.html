@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Теннисные корты в Тюмени</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/courts.css'%}" type="text/css">
+	<script src="{% static 'js/app.js' %}" defer></script>	
+	<!-- для мобильной версии сайта -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Данные о теннисных кортах в Тюмени</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  {% comment %} <h1>Теннисные корты в Тюмени</h1> {% endcomment %}
+  
+  <div class="court-card">
+    {% comment %} <img src="" alt="Корт 1" > {% endcomment %}
+    <p class = "name">Лидер</p> 
+    <div class = "main">
+      <p><img src = "{% static 'img/location.png' %}" align = "middle" width="50"><p class = "text">Народная 72 Суходольский м-н, Восточный округ, Тюмень</p></p>
+      <p><img src = "{% static 'img/worktime.png' %}" align = "middle" width="50"> <p class = "text">Ежедневно с 8.00 до 23.00</p> </p>
+      <p><img src = "{% static 'img/number.png' %}" align = "middle" width="50"><p class = "number">+7‒919‒940‒05‒71<br/>+7 (3452) 56‒20‒72</p> </p>
+      <p><img src = "{% static 'img/email.png' %}" align = "middle" width="50"><p class = "text">lider.tennis@gk-tis.ru</p> </p>
+    </div>
+    <br>
+    <div class = "about">
+      <p class = "aboutcourt"> О КОРТЕ </p>
+      <li>24 корта</li>
+      <li>Стоимость от 600 рублей</li>
+      <li>Бесплатное пробное занятие, групповые и персональные занятия.</li>
+      <li>Покрытие: хард, грунт</li>
+      <li>Подробнее: 
+        <br/>12 закрытых кортов с универсальным сертифицированным покрытием Hard (Хард)
+        <br/>12 открытых кортов с грунтовым покрытием</li>
+    </div>
+    <button onclick="window.location.href='{% url 'time' %}'">Посмотреть расписание</button>
+  </div>
+  
+  
+  <div class="court-card">
+    {% comment %} <img src="court2.jpg" alt="Корт 2"> {% endcomment %}
+    <p class = "name"> Sofi-land</p>
+    <div class = "main">
+      <p><img src = "{% static 'img/location.png' %}" align = "middle" width="50"><p class = "text">Лесобазовская 8а/1 Тура м-н, Ленинский округ, Тюмень</p></p>
+      <p><img src = "{% static 'img/worktime.png' %}" align = "middle" width="50"> <p class = "text">Ежедневно с 8.00 до 23.00</p> </p>
+      <p><img src = "{% static 'img/number.png' %}" align = "middle" width="50"><p class = "text">+7 (3452) 51‒75‒55</p> </p>
+    </div>
+    <div class = "about">
+      <p class = "aboutcourt"> О КОРТЕ </p>
+      <li>Аренда теннисного корта 700 ₽</li>
+      <li>Имеются теннисный корт и футбольное поле</li>
+      <li>Персональная тренировка по теннису 1 700 ₽</li>
+    </div>
+    <button onclick="window.location.href='{% url 'timeland' %}'">Посмотреть расписание </button> <br>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+{% endblock content %}

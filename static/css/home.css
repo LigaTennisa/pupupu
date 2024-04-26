@@ -1,0 +1,28 @@
+body {
+    background: url(register.login.png) no-repeat center center fixed;
+    background-size: cover;
+}
+@font-face {
+	font-family: 'BOWLER'; 
+	src: local('BOWLER'),
+		url(/font/BOWLER.ttf); 
+}
+
+@font-face {
+	font-family: 'OFL'; 
+	src: local('OFL'),
+		url(/font/OFL.ttf); 
+}
+.hello {
+    color: white;
+    font-size: 64px;
+    margin-left: 15px;
+}
+.pravila {
+    float: right;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-right: 15px ;
+    transform: translateY(220%);
+}

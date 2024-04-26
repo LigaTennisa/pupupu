@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'BOWLER'; 
+	src: local('BOWLER'),
+		url(/font/BOWLER.ttf); 
+}
+
+@font-face {
+	font-family: 'OFL'; 
+	src: local('OFL'),
+		url(/font/OFL.ttf); 
+}
+
+* {
+
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position:absolute; 
+    top: 220px;
+    left: 20px;
+    background: #fff;
+}
+  
+.pravila {   
+    width: 80%;
+    margin: 0 auto;
+}
+
+

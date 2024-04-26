@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Теннисные корты в Тюмени</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/\time.css'%}" type="text/css">
+	<script src="{% static 'js/app.js' %}" defer></script>	
+	<!-- для мобильной версии сайта -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+	<table>
+        <caption>Расписание "Sofi-land" <br/> Таблица расписания</caption>
+        <thead>
+            <tr>
+                <th class = "time">Время</th>
+					<th class = "time">Понедельник</th>
+					<th class = "time">Вторник</th>
+					<th class = "time">Среда</th>
+					<th class = "time">Четверг</th>
+					<th class = "time">Пятница</th>
+					<th class = "time">Суббота</th>
+                	<th class = "time">Воскресенье</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class = "time">8:00-9:00</td>
+                <td class = "slot">индивидуальное занятие</td>
+                <td class = "slot">детская группа</td>
+                <td class = "slot">разовое занятие(детское)</td>
+                <td class = "slot">индивидуальное занятие</td>
+				<td class = "slot"></td>
+				<td class = "slot">индивидуальное занятие</td>
+				<td class = "slot"></td>
+            </tr>
+            <tr>
+                <td class = "time">9:30-10:30</td>
+                <td class = "slot">деткая группа</td>
+                <td class = "slot">индивидуальное занятие</td>
+                <td class = "slot"></td>
+                <td class = "slot"></td>
+				<td class = "slot">подростковая группа</td>
+                <td class = "slot"></td>
+				<td class = "slot">Турнир</td>
+            </tr>        
+			<tr>
+                <td class = "time">11:00-12:00</td>
+                <td class = "slot">детская группа</td>
+                <td class = "slot"></td>
+                <td class = "slot">деткая группа</td>
+                <td class = "slot"></td>
+				<td class = "slot"></td>
+                <td class = "slot">индивидуальное занятие</td>
+				<td class = "slot">разовое занятие(детское)</td>
+            </tr>        
+			<tr>
+                <td class = "time">12:30-13:30</td>
+                <td class = "slot">детская группа</td>
+                <td class = "slot">разовое(детское)</td>
+                <td class = "slot">детская группа</td>
+                <td class = "slot">разовое взрослое</td>
+				<td class = "slot"></td>
+                <td class = "slot">разовое взрослое</td>
+				<td class = "slot">разовое занятие(деткое)</td>
+            </tr>        
+			<tr>
+                <td class = "time">14:00-15:00</td>
+                <td class = "slot">подростковая группа</td>
+                <td class = "slot"></td>
+                <td class = "slot">разовое(детское)</td>
+                <td class = "slot"></td>
+				<td class = "slot">индивидуальное занятие</td>
+                <td class = "slot"></td>
+				<td class = "slot">взрослая группа</td>
+            </tr>        
+			<tr>
+                <td class = "time">15:30-16:30</td>
+                <td class = "slot">подростковая группа</td>
+                <td class = "slot"></td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot"></td>
+				<td class = "slot">взрослая группа</td>
+                <td class = "slot">индивидуальное занятие</td>
+				<td class = "slot">взрослая группа</td>
+            </tr>        
+			<tr>
+                <td class = "time">17:00-18:00</td>
+                <td class = "slot"></td>
+                <td class = "slot">индивидуальное занятие</td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot"></td>
+				<td class = "slot">взрослая группа</td>
+                <td class = "slot">индивидуальное занятие</td>
+				<td class = "slot">взрослая группа</td>
+            </tr>        
+			<tr>
+                <td class = "time">18:30-19:30</td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot">подростковая группа</td>
+                <td class = "slot">Турнир</td>
+                <td class = "slot">разовое взрослое</td>
+				<td class = "slot">разовое занятие(взрослое)</td>
+                <td class = "slot"></td>
+				<td class = "slot"></td>
+            </tr>        
+            <tr>
+                <td class = "time">20:00-21:00</td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot">индивидуальное занятие</td>
+                <td class = "slot">разовое взрослое</td>
+				<td class = "slot">разовое занятие(взрослое)</td>
+                <td class = "slot">индивидуальное занятие</td>
+				<td class = "slot">индивидуальное занятие</td>
+            </tr> 
+            <tr>
+                <td class = "time">21:30-22:30</td>
+                <td class = "slot"></td>
+                <td class = "slot">взрослая группа</td>
+                <td class = "slot">индивидуальное занятие</td>
+                <td class = "slot"></td>
+				<td class = "slot">взрослая группа</td>
+                <td class = "slot"></td>
+				<td class = "slot">индивидуальное занятие</td>
+            </tr> 
+        </tbody>
+    </table>
+    
+</body>
+{% endblock content %}

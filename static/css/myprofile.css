@@ -1,0 +1,276 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+@font-face {
+	font-family: 'BOWLER'; 
+	src: local('BOWLER'),
+		url(/font/BOWLER.ttf); 
+}
+
+@font-face {
+	font-family: 'OFL'; 
+	src: local('OFL'),
+		url(/font/OFL.ttf); 
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+
+body {
+    background-color: white;
+    font-size: 14px;
+    line-height: 1;
+    min-height: 100%;
+    overflow-x: none;
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .ads:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#page {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1750px;
+    padding: 0;
+}
+
+.title {
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    margin: 25px;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#top-container{
+    width: 20%;
+    float: left;
+    position: relative;
+	align-items: center;
+}
+
+#top-container img{ 
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    border: 0px solid #000000;
+}
+
+#top-container p{ 
+    font-size: 25px;
+	font-weight: 500;
+	color: #272727;
+    margin: 20px;
+}
+
+.pages {
+    position: absolute;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pages a {
+    color: black;
+    display: block;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.line {
+    width: 110%;
+    margin: 10px;
+}
+
+.line2 {
+    width: 90%;
+    margin-top: 10px;
+    
+}
+
+.pages a:hover {
+    color:#B3D131;
+}
+
+.ads-border p {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.ads {
+    top: 25px;
+    display: inline-block;
+    margin: 30px;
+    overflow-x: hidden ; 
+    overflow-y: hidden;
+	border-radius: 33px;
+	padding: 2rem; 
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    min-width: 20vw !important;
+    min-height: 12vw !important;
+    max-height: 12vw;
+    max-width: 20vw;
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 20px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.ads-border {
+    flex-flow: column nowrap;
+    float:right;
+    width: 75%;
+}
+@keyframes fadeForm{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p.time {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.dop {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.ads small {
+    float: right;
+    color: white;
+    font-size: 20px;
+}
+h3 {
+    color: black;
+} 
+
+/* левая часть */
+.left-container {
+    float: right;
+    width: 57%;
+}
+.otclick {
+    position: relative;
+}
+.otclick p {
+    font-size: 22px;
+    font-weight: 500;
+    float: left;
+    transform: translate(-50%, 150%);
+}
+#responders-list-button {
+    margin-left: 10px;
+    position: absolute;
+    float: left;
+}
+
+.change {
+    transform: translateY(320%);
+    float: right;
+}
+.redact {
+    float:right;
+    color: black;
+    font-size: 25px;
+}
+.delete {
+    float: right;
+    color: #EA870F;
+    font-size: 25px;
+}
+
+@media (max-width: 1040px) {
+    .ads-border {
+        transform: translateX(5%);
+    }
+    .change {
+        transform: translate(-30%, -190%);
+    }
+}
+@media (max-width: 480px) {
+    
+
+ }
+
+script {
+    z-index: 2;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#response-title, #response-description {
+    color: white;
+    transform: translateX(30%);
+}
+  

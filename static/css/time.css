@@ -1,0 +1,54 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+@font-face {
+	font-family: 'BOWLER'; 
+	src: local('BOWLER'),
+		url(/font/BOWLER.ttf); 
+}
+
+@font-face {
+	font-family: 'OFL'; 
+	src: local('OFL'),
+		url(/font/OFL.ttf); 
+}
+body{
+    max-width: 100%;
+    box-sizing: border-box;
+	background-color: #F6F6F6;
+    overflow-x: hidden;
+}
+
+table {
+    max-width: 1750px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+caption {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+  
+  .days {
+    display: flex;
+    flex-direction: row;
+}
+
+  
+.time, .slot {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 18px;
+    margin: 8px;
+}

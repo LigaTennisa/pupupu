@@ -1,0 +1,62 @@
+@import url('https://fonts.cdnfonts.com/css/bowler');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+
+@font-face {
+	font-family: 'BOWLER'; 
+	src: local('BOWLER'),
+		url(/font/BOWLER.ttf); 
+}
+
+@font-face {
+	font-family: 'OFL'; 
+	src: local('OFL'),
+		url(/font/OFL.ttf); 
+}
+
+.court-card {
+    margin: 0 auto;
+    max-width: 100%;
+    max-width: 1750px;
+    padding: 0;
+}
+
+.name {
+    font-size: 64px;
+    margin-top: 15px;
+    font-family: 'BOWLER';
+}
+.main p {
+    font-size: 22px;
+    margin: 10px;
+}
+.text {
+    transform: translate(5%, -200%);
+}
+.number {
+    transform: translate(5%, -130%);
+}
+.aboutcourt {
+    font-size: 40px;
+    font-weight: 400;
+}
+li {
+    font-size: 34px;
+    font-weight: 300;
+    margin: 5px;
+}
+.court-card button {
+    background-color: #B3D131;
+    color: white;
+    font-size: 32px;
+    border-radius: 20px;
+    border: 1px solid #B3D131;
+    padding: 5px;
+    margin: 10px;
+}

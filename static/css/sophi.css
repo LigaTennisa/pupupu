@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timetable {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timetable-grid {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr); /* Отрегулируйте количество дней */
+    grid-gap: 5px;
+  }
+  
+  .days {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .time-slots {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .time-slot,
+  .day {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 11px;
+  }
+  
