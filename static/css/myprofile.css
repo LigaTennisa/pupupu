@@ -57,6 +57,10 @@ header:after, .container:after, footer:after, .ads:after {
     font-weight: 600;
 }
 
+#about {
+    color: #292830;
+    background-color: #000000;
+}
 #top-container{
     width: 20%;
     float: left;

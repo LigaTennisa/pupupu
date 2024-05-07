@@ -20,11 +20,12 @@
 </head>
   
 <body>	
-	<div id = "page">		
-		
+	<div id = "page">				
 		<div id ="top-container">
-			<img src="https://cdn-icons-png.flaticon.com/512/15066/15066588.png" width = "250">
-			<p>{{ request.user.first_name }} {{ request.user.last_name }}</p>
+			<div id = "about">
+				<img src="https://cdn-icons-png.flaticon.com/512/15066/15066588.png" width = "250">
+				<p>{{ request.user.first_name }} {{ request.user.last_name }}</p>
+			</div>
 				<div class = "pages">
 					<hr class = "line">
 					<a href="/find-partner">Найти партнера</a>

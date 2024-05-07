@@ -100,17 +100,15 @@ img  {
     margin-right: 0;
  }
 
-.uved {
-    list-style: none;
-    float: right;
-    position: relative; 
+.uved img {
+    transform: translateY(-25%);
 }
 
  /* авторизация */
 .topnav-right {
     float: right;
     position: relative; 
-    transform: translate(20%, -450%);
+    transform: translate(20%, -280%);
 }
 .topnav-right a {
     margin-right : 50px;
